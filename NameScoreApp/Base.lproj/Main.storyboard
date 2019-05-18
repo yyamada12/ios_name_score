@@ -27,6 +27,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gm2-pS-6Zx">
                                 <rect key="frame" x="190" y="493" width="34" height="30"/>
                                 <state key="normal" title="send"/>
+                                <connections>
+                                    <segue destination="VFf-hv-AAA" kind="show" identifier="showResult" id="DaI-Mq-FBU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,6 +48,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
+        </scene>
+        <!--Result-->
+        <scene sceneID="jXz-b2-cYO">
+            <objects>
+                <viewController id="VFf-hv-AAA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WEb-cT-ggi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-0g-35r">
+                                <rect key="frame" x="153.5" y="409.5" width="107" height="77"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your score is ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQu-fd-RCd">
+                                <rect key="frame" x="148.5" y="358.5" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i5M-0g-35r" firstAttribute="centerY" secondItem="WEb-cT-ggi" secondAttribute="centerY" id="12j-eo-jIw"/>
+                            <constraint firstItem="LQu-fd-RCd" firstAttribute="centerX" secondItem="WEb-cT-ggi" secondAttribute="centerX" id="891-Z7-lEQ"/>
+                            <constraint firstItem="i5M-0g-35r" firstAttribute="centerX" secondItem="WEb-cT-ggi" secondAttribute="centerX" id="Vfa-sn-vT3"/>
+                            <constraint firstItem="i5M-0g-35r" firstAttribute="top" secondItem="LQu-fd-RCd" secondAttribute="bottom" constant="30" id="wsA-pV-BjZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Fw-oa-yQy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Result" id="cxm-aO-DXU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uIt-4s-WUI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1945" y="127"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XM5-k1-X7I">
