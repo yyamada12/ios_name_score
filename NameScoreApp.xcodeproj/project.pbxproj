@@ -14,6 +14,7 @@
 		1B32DCA9228EEE4B00A19832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B32DCA7228EEE4B00A19832 /* LaunchScreen.storyboard */; };
 		1B32DCB4228EEE4B00A19832 /* NameScoreAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32DCB3228EEE4B00A19832 /* NameScoreAppTests.swift */; };
 		1B32DCBF228EEE4B00A19832 /* NameScoreAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32DCBE228EEE4B00A19832 /* NameScoreAppUITests.swift */; };
+		1B32DCCD228FF63200A19832 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32DCCC228FF63200A19832 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1B32DCBA228EEE4B00A19832 /* NameScoreAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NameScoreAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B32DCBE228EEE4B00A19832 /* NameScoreAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameScoreAppUITests.swift; sourceTree = "<group>"; };
 		1B32DCC0228EEE4B00A19832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B32DCCC228FF63200A19832 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				1B32DC9E228EEE4800A19832 /* AppDelegate.swift */,
 				1B32DCA0228EEE4800A19832 /* ViewController.swift */,
+				1B32DCCC228FF63200A19832 /* ResultViewController.swift */,
 				1B32DCA2228EEE4800A19832 /* Main.storyboard */,
 				1B32DCA5228EEE4B00A19832 /* Assets.xcassets */,
 				1B32DCA7228EEE4B00A19832 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				1B32DCA1228EEE4800A19832 /* ViewController.swift in Sources */,
 				1B32DC9F228EEE4800A19832 /* AppDelegate.swift in Sources */,
+				1B32DCCD228FF63200A19832 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
