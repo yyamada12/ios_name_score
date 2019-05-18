@@ -44,6 +44,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Name Score" id="cCn-q3-NBL"/>
+                    <connections>
+                        <outlet property="nameText" destination="yJZ-Q0-C2p" id="jT5-T2-DOg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,6 +83,10 @@
                         <viewLayoutGuide key="safeArea" id="4Fw-oa-yQy"/>
                     </view>
                     <navigationItem key="navigationItem" title="Result" id="cxm-aO-DXU"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="LQu-fd-RCd" id="xhe-Ah-HkD"/>
+                        <outlet property="scoreLabel" destination="i5M-0g-35r" id="ciw-W5-bVB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIt-4s-WUI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

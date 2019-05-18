@@ -10,10 +10,19 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    var myName: String = ""
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.nameLabel.text = "\(self.myName)'s score is ..."
+        
+        // 0 - n
+        // arc4random_uniform(n + 1)
+        self.scoreLabel.text = String(arc4random_uniform(101))
     }
     
 
