@@ -8,13 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var nameText: UITextField!
+    @IBOutlet weak var sendButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        nameText.delegate = self
+    }
+    
+//     delegate
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.sendButton.sendActions(for: .touchUpInside)
+        return true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,6 +54,7 @@ class ViewController: UIViewController {
             if let resultVC = segue.destination as? ResultViewController {
                 resultVC.myName = self.nameText.text ?? ""
             }
+            self.nameText.resignFirstResponder()
         }
         
         

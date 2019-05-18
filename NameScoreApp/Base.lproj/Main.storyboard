@@ -22,7 +22,7 @@
                                 <rect key="frame" x="50" y="433" width="314" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="send"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gm2-pS-6Zx">
                                 <rect key="frame" x="190" y="493" width="34" height="30"/>
@@ -46,6 +46,7 @@
                     <navigationItem key="navigationItem" title="Name Score" id="cCn-q3-NBL"/>
                     <connections>
                         <outlet property="nameText" destination="yJZ-Q0-C2p" id="jT5-T2-DOg"/>
+                        <outlet property="sendButton" destination="gm2-pS-6Zx" id="KuS-eW-UQc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
