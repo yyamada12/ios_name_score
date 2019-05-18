@@ -20,7 +20,10 @@ class ViewController: UIViewController {
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == "showResult" {
             guard self.nameText.text != "" else {
-                print("no name!")
+                let alertController = UIAlertController(title: "Error", message: "Please enter your name", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
                 return false
             }
             return true
